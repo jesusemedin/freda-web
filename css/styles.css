@@ -1,6 +1,11 @@
 html
 {
+    box-sizing: border-box;
     font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16px*/
+}
+*,*:before,:after
+{
+    box-sizing: inherit;
 }
 body
 {
@@ -71,6 +76,7 @@ padding: 1rem 3rem;
 margin-top: 3rem;
 display: inline-block;
 text-align: center;
+border: none;
 }
 .boton-rosado
 {
@@ -354,4 +360,56 @@ line-height: 1.4;
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0 3rem 0;
+}
+/* CONTACTO */
+form p
+{
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+legend
+{
+    font-size: 2rem;
+    color: #333333;
+}
+label
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select
+{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+input[type="radio"]
+{
+    width: auto;
+    margin: 0;
+
+}
+select
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea
+{
+    height: 20rem;
+}
+.forma-contacto
+{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
